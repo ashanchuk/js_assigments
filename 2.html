@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <script>
+        function secondsCount() {
+	    let currentDate = new Date(); 	   
+	    let startOfToday = new Date();
+	    startOfToday.setHours(0);
+	    startOfToday.setMinutes(0);
+	    startOfToday.setSeconds(0);
+	    startOfToday.setMilliseconds(0);
+	    let differenceInSeconds = Math.trunc((currentDate - startOfToday)/1000);
+
+	    console.log(startOfToday);
+	    console.log(currentDate);
+	    console.log(differenceInSeconds);
+        }
+
+        secondsCount();
+    </script>
+    </body>
+</html>

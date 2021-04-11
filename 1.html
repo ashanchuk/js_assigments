@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <script>
+	min = -1000;
+	max = 1000;
+
+        function myArray(length) {
+            let sortedArray = Array.apply(min, Array(length)).map(function() {
+            	return Math.floor(Math.random() * (max - min + 1)) + min;
+            }).sort();
+
+	    let multiply = sortedArray[7] * sortedArray[8] * sortedArray[9];
+
+	    console.log(sortedArray);
+ 	    console.log(multiply);			
+        }
+
+	myArray(10);
+    </script>
+    </body>
+</html>
